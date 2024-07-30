@@ -20,7 +20,8 @@ set -x
 
 source "$CONFIG_SH"
 
-mkdir -p "$PROJECT_LOG_DIR"
+sudo mkdir -p "$PROJECT_LOG_DIR"
+sudo chown "$PROJECT_NAME:$PROJECT_NAME" "$PROJECT_LOG_DIR"
 
 mkdir -p "$PROJECT_API_DIR"
 

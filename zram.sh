@@ -20,6 +20,11 @@ echo "ZRAM_SIZE: $ZRAM_SIZE";
 
 echo "================================================"
 
+if [[ $EUID -ne 0 ]]; then
+   echo "** This script must be run as root!" 1>&2
+   exit 1
+fi
+
 swapoff -a
 
 zramctl --reset /dev/zram0

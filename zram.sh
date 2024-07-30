@@ -18,7 +18,7 @@ ZRAM_SIZE=$(echo "$RAM_TOTAL - $RESERVED_RAM" | bc)
 
 echo "ZRAM_SIZE: $ZRAM_SIZE";
 
-echo "================================================"
+echo "================================================================================"
 
 if [[ $EUID -ne 0 ]]; then
    echo "** This script must be run as root!" 1>&2
@@ -42,7 +42,7 @@ mkswap /swap
 chmod 0600 /swap
 swapon -p 100 /swap
 
-echo "================================================"
+echo "================================================================================"
 
 free -h
 echo

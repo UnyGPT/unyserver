@@ -1,0 +1,14 @@
+# CONFIG
+
+PROJECT_NAME="foo"
+PROJECT_DOMAIN="foo.com"
+
+PROJECT_API_GIT=git@github.com:AllDely/alldely_api.git
+PROJECT_UI_GIT=git@github.com:AllDely/alldely_ui.git
+
+PROJECT_DIR="/home/$PROJECT_NAME"
+PROJECT_LOG_DIR="/var/log/$PROJECT_NAME"
+
+PROJECT_API_DIR="$PROJECT_DIR/${PROJECT_NAME}_api"
+PROJECT_UI_DIR="$PROJECT_DIR/${PROJECT_NAME}_ui"
+PROJECT_CACHE_DIR="$PROJECT_DIR/${PROJECT_NAME}_cache"

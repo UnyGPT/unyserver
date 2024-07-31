@@ -27,11 +27,11 @@ cp "$CONFIG_SH" ~/.unyserver-config.sh
 
 mkdir -p "$PROJECT_API_DIR"
 
-cp "$SCRIPT_DIR/api/*.sh" "$PROJECT_API_DIR/"
+cp $SCRIPT_DIR/api/*.sh "$PROJECT_API_DIR/"
 
 mkdir -p "$PROJECT_UI_DIR"
 
-cp "$SCRIPT_DIR/ui/*.sh" "$PROJECT_UI_DIR/"
+cp $SCRIPT_DIR/ui/*.sh "$PROJECT_UI_DIR/"
 
 mkdir -p "$PROJECT_CACHE_DIR"
 

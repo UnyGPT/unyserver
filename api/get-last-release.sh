@@ -1,6 +1,6 @@
 #!/bin/bash
 
-CONFIG_SH="~/.unyserver-config.sh"
+CONFIG_SH="$HOME/.unyserver-config.sh"
 
 echo "CONFIG_SH: $CONFIG_SH"
 

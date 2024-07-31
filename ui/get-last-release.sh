@@ -1,10 +1,6 @@
 #!/bin/bash
 
-SCRIPT_DIR=$(dirname "$(realpath "$0")")
-
-echo "SCRIPT_DIR: $SCRIPT_DIR"
-
-CONFIG_SH="$SCRIPT_DIR/../config.sh"
+CONFIG_SH="~/.unyserver-config.sh"
 
 echo "CONFIG_SH: $CONFIG_SH"
 

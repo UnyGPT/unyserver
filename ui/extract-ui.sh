@@ -1,10 +1,6 @@
 #!/bin/bash
 
-SCRIPT_DIR=$(dirname "$(realpath "$0")")
-
-echo "SCRIPT_DIR: $SCRIPT_DIR"
-
-CONFIG_SH="$SCRIPT_DIR/../config.sh"
+CONFIG_SH="~/.unyserver-config.sh"
 
 echo "CONFIG_SH: $CONFIG_SH"
 
@@ -20,7 +16,7 @@ set -x
 
 source "$CONFIG_SH"
 
-rm -rf ./packages
+rm -rf ./ui-build
 
 LAST_RELEASE=$( ls --full-time ${PROJECT_NAME}_ui-* | awk '{print $6$7 " " $9}' | sort | awk '{print $2}' | tail -n 1 )
 

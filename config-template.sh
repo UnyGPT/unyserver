@@ -3,6 +3,8 @@
 PROJECT_NAME="foo"
 PROJECT_DOMAIN="foo.com"
 
+API_SERVER_EXE=api_server
+
 PROJECT_DIR="/home/$PROJECT_NAME"
 PROJECT_LOG_DIR="/var/log/$PROJECT_NAME"
 

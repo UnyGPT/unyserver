@@ -23,3 +23,4 @@ cd "$PROJECT_API_DIR";
 export DART_VM_OPTIONS=--verbose_gc,--old_gen_heap_size=1500
 
 ./$API_SERVER_EXE api-prod-gcp-valid.yaml --port 80 --address 0 -cookieless -letsencrypt -letsencrypt-production >> /var/log/$PROJECT_NAME/api_server.log  2>&1
+

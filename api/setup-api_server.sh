@@ -18,5 +18,5 @@ source "$CONFIG_SH"
 
 cd "$PROJECT_API_DIR";
 
-chmod 755 $$API_SERVER_EXE
+chmod 755 $API_SERVER_EXE
 sudo setcap 'cap_net_bind_service=+ep' $$API_SERVER_EXE

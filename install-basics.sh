@@ -3,7 +3,7 @@
 
 sudo apt-get update -y
 
-sudo apt-get install unzip zip at tree apt-transport-https curl wget git bc util-linux -y
+sudo apt-get install unzip zip at tree apt-transport-https curl wget git bc jq util-linux dnsutils -y
 
 
 ## Dart SDK:
